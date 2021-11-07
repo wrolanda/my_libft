@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
+/*   By: wrolanda < wrolanda@student.21-school.r    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:16:49 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/22 01:45:18 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/02 22:06:15 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 static int	ft_countnbr(long int n)
 {
 	int			k;
-	long int	n1;
 
 	k = 0;
-	n1 = n;
 	if (n <= 0)
 		k++;
 	while (n != 0)
