@@ -7,20 +7,28 @@ SRCS	=	ft_isalpha.c	ft_isdigit.c	ft_isalnum.c\
 			ft_memcmp.c		ft_strnstr.c	ft_atoi.c\
 			ft_memmove.c	ft_strlcpy.c	ft_strlcat.c\
 			ft_calloc.c		ft_strdup.c		ft_substr.c\
-			ft_strjoin.c	ft_itoa.c		ft_strtrim.c\
+			ft_strjoin.c	ft_strtrim.c	ft_itoa.c		ft_split.c\
+			ft_strmapi.c	ft_striteri.c	ft_putchar_fd.c\
+			ft_putstr_fd.c	ft_putendl_fd.c	ft_putnbr_fd.c\
 
+SRCS_B	=	ft_lstnew.c		ft_lstadd_front.c ft_lstsize.c	
 
-SRCS_B	=	
 HEADER	=	libft.h
 OBJ		=	$(patsubst %.c, %.o, $(SRCS))
 OBJ_B	=	$(SRCS_B:%.c=%.o)
 
-CC		=	gcc
-CFLAGS	=	-Wall -Wextra -Werror -I$(HEADER)
+#$(SRCS_B:%.c=%.o)
 
-.PHONY	:	all clean fclean re bonus
+CC		=	gcc
+CFLAGS	=	-Wall -Wextra -Werror 
+
+.PHONY	:	all so clean fclean re bonus
 
 all		:	$(NAME)
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 $(NAME)	:	$(OBJ) $(HEADER)
 	ar	rcs	$(NAME) $?
@@ -29,7 +37,7 @@ $(NAME)	:	$(OBJ) $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus	:
-	@make OBJ = "$(OBJ_B)" all
+	@make OBJ="$(OBJ_B)" all
 
 clean	:
 	rm	-f $(OBJ) $(OBJ_B)
