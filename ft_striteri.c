@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 12:16:05 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/25 12:51:43 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/08 18:34:22 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	k = 0;
 	if (s == NULL || f == NULL)
 		return ;
-	while (k < (int)ft_strlen(s))
+	while (s[k])
 	{
-		(*f)(k, s);
+		(*f)(k, &s[k]);
 		k++;
-		s++;
 	}
 }
 
