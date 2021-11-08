@@ -12,7 +12,8 @@ SRCS	=	ft_isalpha.c	ft_isdigit.c	ft_isalnum.c\
 			ft_putstr_fd.c	ft_putendl_fd.c	ft_putnbr_fd.c\
 
 SRCS_B	=	ft_lstnew.c		ft_lstadd_front.c	ft_lstsize.c\
-			ft_lstlast.c	ft_lstadd_back.c	
+			ft_lstlast.c	ft_lstadd_back.c	ft_lstdelone.c\
+			
 
 HEADER	=	libft.h
 OBJ		=	$(patsubst %.c, %.o, $(SRCS))
