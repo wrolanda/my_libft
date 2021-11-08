@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 16:27:59 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/08 13:19:10 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/08 18:51:40 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,19 +39,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	else
 		*lst = new;
-<<<<<<< HEAD
-=======
-}
-/*void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	last_elem;
-
-	if (*lst)
-	{
-		last_elem = ft_lstlast(*lst);
-		last_elem->next = new;
-	}
-	else
-		*lst = new;
->>>>>>> 9e687b85393c4e6fbe6c4618f34bba16b330d1a8
 }*/
