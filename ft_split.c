@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:45:30 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/23 15:27:17 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/09 15:55:11 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,13 +67,36 @@ static int	ft_word_len(char const *s, char c, int i)
 
 static void	ft_frees(char **res, int k)
 {
-	while (k > 0)
+	while (k >= 0)
 	{
 		free(res[k]);
 		k--;
 	}
 	free(res);
 }
+
+/*static void	ft_wordprint(char **res, char const *s, char c, int i, int q)
+{
+	int	len_word;
+	int	k;
+
+	len_word = ft_word_len(s, c, i);
+	res[q] = (char *)malloc(sizeof(char) * (len_word + 1));
+	if (res[q] == NULL)
+	{
+		ft_frees (res, q);
+		return (NULL);
+	}
+	k = 0;
+	while (s[i] != c && s[i] != '\0')
+	{
+		res[q][k] = s[i];
+		i++;
+		k++;
+	}
+	res [q][k] = '\0';
+	q++;
+}*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -85,21 +108,18 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	q = 0;
+	if (!s)
+		return (NULL);
 	res = (char **)malloc(sizeof(char *) * (ft_words_count(s, c) + 1));
 	if (res == NULL)
 		return (NULL);
 	while (s[i])
 	{
 		while (s[i] == c && s[i] != '\0')
-		{
-			//printf ("s[%d] = %c\n", i, s[i]);
 			i++;
-		}
-		//printf ("\n");
 		if (s[i] != c && s[i] != '\0')
 		{
 			len_word = ft_word_len(s, c, i);
-			//printf ("len_word = %d;\n", len_word);
 			res[q] = (char *)malloc(sizeof(char) * (len_word + 1));
 			if (res[q] == NULL)
 			{
@@ -109,28 +129,17 @@ char	**ft_split(char const *s, char c)
 			k = 0;
 			while (s[i] != c && s[i] != '\0')
 			{
-				//printf ("s[%d] = %c\n", i, s[i]);
 				res[q][k] = s[i];
-				//printf ("res[%d][%d] = %c\n", q, k, res[q][k]);
 				i++;
 				k++;
 			}
-			//printf ("\n");
 			res [q][k] = '\0';
-			//printf ("res[%d][%d] = %c\n", q, k, res[q][k]);
-			//printf ("res[%d] = (%s)\n\n", q, res[q]);
 			q++;
-			// if (q == ft_words_count(s, c))
-			// {
-			// 	res[q] = (void *)0;
-			// 	return (res);
-			// }
 		}
 	}
-	res[q] = (void *)0; // del?
+	res[q] = NULL;
 	return (res);
 }
-
 // int	main(int argc, char **argv)
 // {
 // 	(void)argc;
