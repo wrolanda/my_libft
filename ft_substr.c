@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 18:06:00 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/05 09:55:24 by wrolanda         ###   ########.fr       */
+/*   Created: 2021/11/10 17:28:11 by wrolanda          #+#    #+#             */
+/*   Updated: 2021/11/10 17:28:37 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /*
 DESCRIPTION
 Allocates (with malloc(3)) and returns a substring
@@ -35,7 +34,7 @@ static char	*ft_malres(size_t len, char const *s)
 	return (res1);
 }
 
-char	*ft_(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
 	size_t	i;
