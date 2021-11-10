@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:45:30 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:54:41 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 18:11:02 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,46 +60,51 @@ static int	ft_word_len(char const *s, char c, int i)
 	return (k);
 }
 
-static void	ft_frees(char **res, int k)
+static void	ft_frees(char **res, int q)
 {
-	while (k >= 0)
+	q--;
+	while (q >= 0)
 	{
-		free(res[k]);
-		k--;
+		free(res[q]);
+		q--;
 	}
 	free(res);
 }
 
-/*static void	ft_wordprint(char **res, char const *s, char c, int i, int q)
+static char	**ft_wordprint(char **res, char const *s, char c, int q)
 {
-	int	len_word;
 	int	k;
+	int	i;
 
-	len_word = ft_word_len(s, c, i);
-	res[q] = (char *)malloc(sizeof(char) * (len_word + 1));
-	if (res[q] == NULL)
+	i = 0;
+	while (s[i])
 	{
-		ft_frees (res, q);
-		return (NULL);
+		while (s[i] == c && s[i] != '\0')
+			i++;
+		if (s[i] != c && s[i] != '\0')
+		{
+			res[q] = (char *)malloc(sizeof(char) * (ft_word_len(s, c, i) + 1));
+			if (res[q] == NULL)
+			{
+				ft_frees (res, q);
+				return (NULL);
+			}
+			k = 0;
+			while (s[i] != c && s[i] != '\0')
+				res[q][k++] = s[i++];
+			res [q][k] = '\0';
+			q++;
+		}
 	}
-	k = 0;
-	while (s[i] != c && s[i] != '\0')
-	{
-		res[q][k] = s[i];
-		i++;
-		k++;
-	}
-	res [q][k] = '\0';
-	q++;
-}*/
+	res[q] = NULL;
+	return (res);
+}
 
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	int		i;
-	int		k;
 	int		q;
-	int		len_word;
 
 	i = 0;
 	q = 0;
@@ -108,48 +113,25 @@ char	**ft_split(char const *s, char c)
 	res = (char **)malloc(sizeof(char *) * (ft_words_count(s, c) + 1));
 	if (res == NULL)
 		return (NULL);
-	while (s[i])
-	{
-		while (s[i] == c && s[i] != '\0')
-			i++;
-		if (s[i] != c && s[i] != '\0')
-		{
-			len_word = ft_word_len(s, c, i);
-			res[q] = (char *)malloc(sizeof(char) * (len_word + 1));
-			if (res[q] == NULL)
-			{
-				ft_frees (res, q);
-				return (NULL);
-			}
-			k = 0;
-			while (s[i] != c && s[i] != '\0')
-			{
-				res[q][k] = s[i];
-				i++;
-				k++;
-			}
-			res [q][k] = '\0';
-			q++;
-		}
-	}
-	res[q] = NULL;
+	res = ft_wordprint(res, s, c, q);
 	return (res);
 }
-// int	main(int argc, char **argv)
-// {
-// 	(void)argc;
-// 	int i = 0;
-// 	char	c = '|';
-// 	char	*str = "split  ||this|for|me|||||!|";
-// 	int		k = ft_words_count(str, c);
-// 	printf("кол-во слов = %d;\n\n\n", k);
-// 	char	**res = ft_split(str, c);
-// 	//while (res[i])
-// 	for (int i = 0; i < (ft_words_count(str, c) + 1); i++)
-// 	{
-// 		printf("res [%d] = (%s)\n", i, res[i]);
-// 	}
-// 	//i = ft_words_count(str, c);
-// 	//printf("res [%d] = %s\n", i, res[i]);
-// 	return (0);
-// }
+
+/*#include <stdio.h>
+int	main(void)
+{
+	int i = 0;
+	char	c = '|';
+	char	*str = "split  ||this|for|me|||||!|";
+	int		k = ft_words_count(str, c);
+	printf("кол-во слов = %d;\n\n\n", k);
+	char	**res = ft_split(str, c);
+	//while (res[i])
+	for (int i = 0; i < (ft_words_count(str, c) + 1); i++)
+	{
+		printf("res [%d] = (%s)\n", i, res[i]);
+	}
+	//i = ft_words_count(str, c);
+	//printf("res [%d] = %s\n", i, res[i]);
+	return (0);
+}*/
