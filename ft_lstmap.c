@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 02:12:10 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/09 03:18:21 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 17:00:26 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ Iterates the list ’lst’ and applies the function
 list resulting of the successive applications of
 the function ’f’. The ’del’ function is used to
 delete the content of an element if needed.
+
 PARAMETERS
 #1. The adress of a pointer to an element.
 #2. The adress of the function used to iterate on the list.

@@ -6,12 +6,21 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 02:06:20 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/05 09:50:17 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:52:07 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+DESCRIPTION
+Allocates (with malloc(3)) and returns a copy of
+’s1’ with the characters specified in ’set’ removed
+from the beginning and the end of the string.
 
+PARAMETERS
+#1. The string to be trimmed.
+#2. The reference set of characters to trim.
+*/
 static int	ft_begin_trim(char const *s1, char const *set)
 {
 	int	i;

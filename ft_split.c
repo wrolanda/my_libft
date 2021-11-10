@@ -6,27 +6,22 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:45:30 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/09 15:55:11 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:54:41 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-/*Parameters 
-#1. The string to be split.
-#2. The delimiter character.
-
-Return value 
-The array of new strings resulting from the split.
-NULL if the allocation fails.
-
-External functs. malloc, free
-
-Description 
+/*
+DESCRIPTION 
 Allocates (with malloc(3)) and returns an array
 of strings obtained by splitting ’s’ using the
 character ’c’ as a delimiter. The array must be
-ended by a NULL pointer.*/
+ended by a NULL pointer.
+
+PARAMETERS
+#1. The string to be split.
+#2. The delimiter character.
+*/
 
 static int	ft_words_count(char const *s, char c)
 {

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,18 @@
 
 #include "libft.h"
 
-/*Substr возвращает часть строки s, специфицированную параметрами start и len.*/
+/*
+DESCRIPTION
+Allocates (with malloc(3)) and returns a substring
+from the string ’s’.
+The substring begins at index ’start’ and is of
+maximum size ’len’.
+
+PARAMETERS
+#1. The string from which to create the substring.
+#2. The start index of the substring in the string ’s’.
+#3. The maximum length of the substring.
+*/
 static char	*ft_malres(size_t len, char const *s)
 {
 	char	*res1;
@@ -24,7 +35,7 @@ static char	*ft_malres(size_t len, char const *s)
 	return (res1);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
 	size_t	i;
@@ -52,7 +63,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (res);
 }
 
-/*char	*ft_substr(char const *s, unsigned int start, size_t len)
+/*char	*ft_(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
 	size_t	i;
@@ -85,7 +96,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 #include <stdio.h>
 int	main(void)
 {
-	char	*s2 = ft_substr("abcdef", -1, 4);
+	char	*s2 = ft_("abcdef", -1, 4);
 	printf("%s \n\n", s2);
 	free(s2);
 }*/

@@ -6,12 +6,20 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 12:46:28 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/25 13:06:29 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:58:27 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+DESCRIPTION 
+Outputs the string ’s’ to the given file
+descriptor.
 
+PARAMETERS
+#1. The string to output.
+#2. The file descriptor on which to write.
+*/
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
