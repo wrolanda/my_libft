@@ -6,13 +6,16 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 14:12:06 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/07 14:57:57 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:39:35 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*DESCRIPTION
+Counts the number of elements in a list.
+PARAMETERS
+#1. The beginning of the list.*/
 #include "libft.h"
 
-/*Counts the number of elements in a list.*/
 int	ft_lstsize(t_list *lst)
 {
 	int	i;
