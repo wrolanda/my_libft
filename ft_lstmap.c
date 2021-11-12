@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 02:12:10 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 17:00:26 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:38:55 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*DESCRIPTION
 Iterates the list ’lst’ and applies the function
 ’f’ to the content of each element. Creates a new
@@ -23,6 +22,8 @@ PARAMETERS
 #2. The adress of the function used to iterate on the list.
 #3. The adress of the function used to delete the
 content of an element if needed.*/
+#include "libft.h"
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*lst_map;
