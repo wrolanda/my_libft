@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:45:30 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 18:11:02 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/11 17:09:26 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION 
 Allocates (with malloc(3)) and returns an array
@@ -22,6 +21,7 @@ PARAMETERS
 #1. The string to be split.
 #2. The delimiter character.
 */
+#include "libft.h"
 
 static int	ft_words_count(char const *s, char c)
 {
