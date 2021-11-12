@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 12:16:05 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:56:29 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:41:28 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION 
 Applies the function f to each character of the
@@ -22,6 +21,8 @@ PARAMETERS
 #1. The string on which to iterate.
 #2. The function to apply to each character.
 */
+#include "libft.h"
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	k;
