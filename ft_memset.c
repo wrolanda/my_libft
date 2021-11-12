@@ -6,13 +6,16 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:05:16 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/11 16:58:03 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:40:14 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*memset - fill a byte string with a byte value
+DESCRIPTION
+	The memset() function writes len bytes of value c (converted to an
+	unsigned char) to the string b.*/
 #include "libft.h"
 
-/*memset – заполнения массива указанными символами*/
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
