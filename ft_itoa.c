@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:16:49 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:56:32 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/12 22:30:21 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION 
 Allocates (with malloc(3)) and returns a string
@@ -20,6 +19,8 @@ Negative numbers must be handled.
 PARAMETERS
 #1. the integer to convert.
 */
+#include "libft.h"
+
 static int	ft_countnbr(long int n)
 {
 	int			k;
