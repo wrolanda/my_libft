@@ -6,13 +6,18 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 17:49:47 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/19 15:57:25 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:41:09 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*strchr, strrchr -- locate character in string
+DESCRIPTION
+	The strchr() function locates the first occurrence of c (converted to a
+	char) in the string pointed to by s.  The terminating null character is
+	considered to be part of the string; therefore if c is `\0', the func-
+	tions locate the terminating `\0'.*/
 #include "libft.h"
 
-/*strchr – поиск первого вхождения символа в строку*/
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
