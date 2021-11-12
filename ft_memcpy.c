@@ -6,11 +6,15 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 19:23:29 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/15 18:44:35 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 19:38:49 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*memcpy – копирование непересекающихся массивов*/
+/*memcpy -- copy memory area
+DESCRIPTION
+	The memcpy() function copies n bytes from memory area src to memory area
+	dst.  If dst and src overlap, behavior is undefined.  Applications in
+	which dst and src might overlap should use memmove(3) instead.*/
 
 #include "libft.h"
 
