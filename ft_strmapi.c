@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:35:23 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:55:42 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:42:08 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION 
 Applies the function ’f’ to each character of
@@ -22,6 +21,8 @@ PARAMETERS
 #1. The string on which to iterate.
 #2. The function to apply to each character.
 */
+#include "libft.h"
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
