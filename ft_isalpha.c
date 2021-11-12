@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 19:28:10 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/05 16:50:00 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/12 22:29:24 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ int	main(void)
 	printf("neorig[%c] = %d;\n\n", f, ft_isalpha(f));
 	printf("orig[%c] = %d;\n", g, isalpha(g));
 	printf("neorig[%c] = %d;\n\n", g, ft_isalpha(g));
+	
 }*/
