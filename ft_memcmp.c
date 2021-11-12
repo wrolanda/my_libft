@@ -6,13 +6,17 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 19:57:29 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/13 20:41:27 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:39:53 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*memcmp -- compare byte string
+DESCRIPTION
+	The memcmp() function compares byte string s1 against byte string s2.
+	Both strings are assumed to be n bytes long.
+*/
 #include "libft.h"
 
-/*memcmp – сравнение массивов*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;
