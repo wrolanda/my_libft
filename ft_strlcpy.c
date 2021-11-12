@@ -6,15 +6,16 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:10:19 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/18 20:47:56 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:41:53 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*strlcpy, strlcat -- size-bounded string copying and concatenation
+DESCRIPTION
+	strlcpy() copies up to dstsize - 1 characters from the string src to dst,
+	NUL-terminating the result if dstsize is not 0.*/
 #include "libft.h"
 
-/*Функция strlcpy копирует из строки src в буфер dst не более чем size - 1 
-символов и гарантированно устанавливает в конец строки нулевой символ.
-strlcpy возвращает размер строки по адресу src*/
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
