@@ -6,14 +6,17 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 16:28:03 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/19 17:28:43 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:35:36 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*calloc - memory allocation.
+	The calloc() function contiguously allocates enough space for count objects
+	that are size bytes of memory each and returns a pointer to the allocated mem-
+	ory.  The allocated memory is filled with bytes of value zero.
+*/
 #include "libft.h"
-/*Функция calloc выделяет блок памяти для массива 
-размером — num элементов, каждый из которых занимает   
-size байт, и инициализирует все свои биты в нулями.*/
+
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
