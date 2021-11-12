@@ -6,12 +6,19 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 20:48:34 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/18 22:04:29 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:42:26 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*strstr, strcasestr, strnstr -- locate a substring in a string
+DESCRIPTION
+	The strnstr() function locates the first occurrence of the null-termi-
+	nated string needle in the string haystack, where not more than len char-
+	acters are searched.  Characters that appear after a `\0' character are
+	not searched.  Since the strnstr() function is a FreeBSD specific API, it
+	should only be used when portability is not a concern.
+*/
 #include "libft.h"
-/*strstr – поиск первого вхождения строки А в строку В*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
