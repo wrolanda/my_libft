@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 02:06:20 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:52:07 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/11 19:13:34 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION
 Allocates (with malloc(3)) and returns a copy of
@@ -21,6 +20,8 @@ PARAMETERS
 #1. The string to be trimmed.
 #2. The reference set of characters to trim.
 */
+#include "libft.h"
+
 static int	ft_begin_trim(char const *s1, char const *set)
 {
 	int	i;
@@ -28,7 +29,7 @@ static int	ft_begin_trim(char const *s1, char const *set)
 
 	i = 0;
 	q = 0;
-	while (set[q])
+	while (set[q] && s1[i])
 	{
 		if (s1[i] == set[q])
 		{
@@ -53,7 +54,7 @@ static int	ft_end_trim(char const *s1, char const *set)
 	while (s1[i])
 		i++;
 	i--;
-	while (set[q])
+	while (set[q] && i >= 0)
 	{
 		if (s1[i] == set[q])
 		{
