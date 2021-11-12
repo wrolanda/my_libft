@@ -6,13 +6,17 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 16:16:28 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/18 19:11:18 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:40:03 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*memmove -- copy byte string.
+DESCRIPTION
+	The memmove() function copies len bytes from string src to string dst.
+	The two strings may overlap; the copy is always done in a non-destructive
+	manner.*/
 #include "libft.h"
 
-/*memmove – копирование массивов (в том числе пересекающихся).*/
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*dst1;
