@@ -6,13 +6,17 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 18:37:30 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/19 17:21:21 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:35:24 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*atoi, atoi_l -- convert ASCII string to integer
+DESCRIPTION
+	The atoi() function converts the initial portion of the string pointed to
+	by str to int representation.
+*/
 #include "libft.h"
 
-/*atoi – преобразование строки в число типа int*/
 static int	ft_sign(const char *str)
 {
 	int	i;
