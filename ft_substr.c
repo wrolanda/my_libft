@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:28:11 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 17:28:37 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:42:55 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION
 Allocates (with malloc(3)) and returns a substring
@@ -23,6 +22,8 @@ PARAMETERS
 #2. The start index of the substring in the string ’s’.
 #3. The maximum length of the substring.
 */
+#include "libft.h"
+
 static char	*ft_malres(size_t len, char const *s)
 {
 	char	*res1;
