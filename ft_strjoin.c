@@ -6,11 +6,10 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 20:50:16 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 16:54:43 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:41:35 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
 DESCRIPTION
 Allocates (with malloc(3)) and returns a new
@@ -21,6 +20,8 @@ PARAMETERS
 #1. The prefix string.
 #2. The suffix string.
 */
+#include "libft.h"
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*newstr;
