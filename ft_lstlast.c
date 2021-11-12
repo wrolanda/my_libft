@@ -6,13 +6,16 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 16:19:28 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/08 04:25:20 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:38:43 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*DESCRIPTION
+Returns the last element of the list.
+PARAMETERS
+#1. The beginning of the list.*/
 #include "libft.h"
 
-/*Returns the last element of the list.*/
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
