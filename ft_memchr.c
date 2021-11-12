@@ -6,13 +6,17 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 19:02:32 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/19 16:27:32 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/10 20:39:44 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* memchr -- locate byte in byte string
+DESCRIPTION
+	The memchr() function locates the first occurrence of c (converted to an
+	unsigned char) in string s.
+*/
 #include "libft.h"
 
-/*memchr – поиск первого вхождения указанного символа в массиве.*/
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
