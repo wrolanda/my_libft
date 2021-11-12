@@ -6,16 +6,19 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:58:01 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/10/19 16:21:28 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/11 19:12:29 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*strlcpy, strlcat -- size-bounded string copying and concatenation
+DESCRIPTION
+	strlcat() appends string src to the end of dst.  It will append at most
+	dstsize - strlen(dst) - 1 characters.  It will then NUL-terminate, unless
+	dstsize is 0 or the original dst string was longer than dstsize (in prac-
+	tice this should not happen as it means that either dstsize is incorrect
+	or that dst is not a proper string).*/
 #include "libft.h"
 
-/*strlcat делает то же самое (копирует из строки src в буфер dst 
-не более чем size - 1 символов и гарантированно устанавливает в 
-конец строки нулевой символ.), однако копирование ведётся не в начало 
-dst, а таким образом, чтобы продолжить строку, на которую указывает dst*/
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -35,7 +38,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 		j++;
 	}
-	dst[j] = '\0';
+	if (dstsize != 0 && res_dst <= dstsize)
+		dst[j] = '\0';
 	if (dstsize < res_dst)
 		return (res_src + dstsize);
 	else
@@ -50,7 +54,6 @@ int main(void)
 	char  dst[20] ="sdfsdf";   
 	const char *src = "qwerty qwerty";
    size_t sz;
-                 // избыточная инициализация для отладочной печати
 
    printf("строка: \"%s\"\n\n", src);
    printf("буфер перед копированием: \"%s\"\n", dst);
