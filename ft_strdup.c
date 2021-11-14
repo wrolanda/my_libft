@@ -6,14 +6,15 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 17:32:33 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 20:41:20 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:47:26 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*strdup -- save a copy of a string
 DESCRIPTION
-	The strdup() function allocates sufficient memory for a copy of the string s1,
-	does the copy, and returns a pointer to it.  The pointer may subsequently be
+	The strdup() function allocates sufficient memory 
+	for a copy of the string s1, does the copy, and returns 
+	a pointer to it.  The pointer may subsequently be
 	used as an argument to the function free(3).*/
 #include "libft.h"
 

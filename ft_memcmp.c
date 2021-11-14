@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 19:57:29 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 20:39:53 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:43:59 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main(void)
 {
-   // Сравниваемые строки
+   // sravnivaemie stroki
 	char *s1 = "atoms\0\0\0\0";
 	char *s2 = "atoms\0abc";
 	size_t size = 8;

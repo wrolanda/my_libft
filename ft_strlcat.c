@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:58:01 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/11 19:12:29 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:48:53 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,15 +55,15 @@ int main(void)
 	const char *src = "qwerty qwerty";
    size_t sz;
 
-   printf("строка: \"%s\"\n\n", src);
-   printf("буфер перед копированием: \"%s\"\n", dst);
+   printf("str: \"%s\"\n\n", src);
+   printf("buff pered copy: \"%s\"\n", dst);
 
    sz = ft_strlcat(dst, src, sizeof(dst));    
    if (sz >= sizeof(dst))      
-      printf("обнаружено усечение строки с %zu до %lu символов !\n",\
+      printf("usechenie str with %zu to %lu symbols !\n",\
 	   sz, sizeof(dst)-1);
 
-   printf("буфер после копирования:  \"%s\"\n", dst);
+   printf("buff posle copy:  \"%s\"\n", dst);
 
    return 0;
 }*/

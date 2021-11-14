@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 18:54:59 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/12 22:27:58 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:39:53 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(void)
 	printf("ORIG	['%s']\n", c21);
 	ft_bzero(c22, 5);
 	printf("NEORIG	['%s']\n\n", c22);
-// массив int
+// array int
 
 	int	c31[] = {1, 2, 3, 4, 5};
 	int	c32[] = {1, 2, 3, 4, 5};

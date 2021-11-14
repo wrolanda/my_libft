@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 20:05:02 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 20:42:19 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:50:23 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 #include <string.h> 
 int main (void)
 {
-   // Сравниваемые строки
+   // compare strs
 	char *str1 = "abcdef";
 	char *str2 = "abcdefghijklmnop";
   
-   // Сравниваем первые пять символов двух строк
+   // compare first 5 symbols 2-uh str
    int i = ft_strncmp (str1, str2, 6);
    printf ("%d; ", i);
 }

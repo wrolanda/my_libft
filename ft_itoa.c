@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:16:49 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/12 22:30:21 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:42:11 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ char	*ft_itoa(int n)
 		n /= 10;
 		k++;
 	}
-	printf("кол-во символов числа = %d\n", k);
+	printf("kol-vo symbols of number = %d\n", k);
 	res = malloc(sizeof(char) * (k + 1));
 	if (res == NULL)
 		return (NULL);

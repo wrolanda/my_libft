@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 20:48:34 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 20:42:26 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:50:47 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 #include <string.h>
 int	main(void)
 {
-   // Сравниваемые строки
+   // compare's strs
 	char *s1 = "lorem ipsum dolor sit amet";
 	char *s2 = "dolor";
 	size_t size = 15;

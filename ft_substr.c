@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:28:11 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 20:42:55 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 21:42:12 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,14 @@ PARAMETERS
 */
 #include "libft.h"
 
-static char	*ft_malres(size_t len, char const *s)
+static char	*ft_malres(size_t len, char const *s, unsigned int start)
 {
 	char	*res1;
+	size_t	n;
 
-	if (len > ft_strlen(s))
-		res1 = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	n = ft_strlen(s) - start;
+	if (((unsigned int)len + start) > ft_strlen(s))
+		res1 = (char *)malloc(sizeof(char) * n + 1);
 	else
 		res1 = (char *)malloc(sizeof(char) * len + 1);
 	return (res1);
@@ -51,7 +53,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		res[0] = '\0';
 		return (res);
 	}
-	res = ft_malres(len, s);
+	res = ft_malres(len, s, start);
 	if (res == NULL)
 		return (NULL);
 	while (i < len && (s[i + start]))
@@ -93,10 +95,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 }*/
 /*#include <stdio.h>
-#include <stdio.h>
 int	main(void)
 {
-	char	*s2 = ft_("abcdef", -1, 4);
-	printf("%s \n\n", s2);
+	char	*s2 = ft_substr("0123456789", 1, 9);
+	printf("(%s)\n", s2);
 	free(s2);
 }*/

@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 19:23:29 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/10 19:38:49 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:44:50 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	main(void)
 	unsigned char	memecpy22[11] = "rtytkjhgef";
 	unsigned char	memecpy23[11] = "rtytkjhgef";
 
-	printf("memcpy – копирование непересекающихся массивов\n");
+	printf("memcpy - copy neperesek array\n");
 	printf("STR	['%s']\n", memecpy11);
 	memcpy(memecpy12, memecpy11, 11);
 	printf("ORIG	['%s']\n", memecpy12);

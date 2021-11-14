@@ -6,7 +6,7 @@
 /*   By: wrolanda <wrolanda@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 02:06:20 by wrolanda          #+#    #+#             */
-/*   Updated: 2021/11/11 19:13:34 by wrolanda         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:54:07 by wrolanda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ static int	ft_begin_trim(char const *s1, char const *set)
 		else
 			q++;
 	}
-	//printf ("символов в начале = %d;\n", i);
+	//printf (sumbols in begin = %d;\n", i);
 	return (i);
 }
 
@@ -168,7 +168,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (start_trim > end_trim)
 		start_trim = 0;
 	count = end_trim - start_trim;
-	//printf("сколько выделить ячеек = %d;\n\n", end_trim - start_trim);
+	//printf("skolko videlit' yacheek = %d;\n\n", end_trim - start_trim);
 	res = malloc(sizeof(char) * ((end_trim - start_trim) + 1));
 	if (res == NULL)
 		return (NULL);
@@ -224,7 +224,7 @@ static int	ft_begin_trim(char const *s1, char const *set)
 		else
 			q++;
 	}
-	//printf ("символов в начале = %d;\n", i);
+	//printf ("symbols in begin = %d;\n", i);
 	return (i);
 }
 
@@ -273,7 +273,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (start_trim > end_trim)
 		start_trim = 0;
 	count = end_trim - start_trim;
-	//printf("сколько выделить ячеек = %d;\n\n", end_trim - start_trim);
+	//printf("skol'ko videlit' yacheek = %d;\n\n", end_trim - start_trim);
 	res = malloc(sizeof(char) * ((end_trim - start_trim) + 1));
 	if (res == NULL)
 		return (NULL);
