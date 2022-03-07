@@ -30,6 +30,7 @@ In order to implement the two following functions, you will use malloc():
 • strdup
 
  Part 2 - Additional functions
+ 
 • ft_substr - Allocates (with malloc(3)) and returns a substring
 from the string ’s’. The substring begins at index ’start’ and is of
 maximum size ’len’.
@@ -74,6 +75,7 @@ followed by a newline.
 descriptor.
 
 Bonus part
+
 • ft_lstnew - Allocates (with malloc(3)) and returns a new node.
 The member variable ’content’ is initialized with
 the value of the parameter ’content’. The variable
