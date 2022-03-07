@@ -2,6 +2,7 @@
 libft library ecole42
 You must write your own function implementing the following original ones. They do
 not require any external functions:
+
 • isalpha
 • isdigit
 • isalnum
